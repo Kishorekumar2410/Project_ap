@@ -7,9 +7,26 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <script src="https://kit.fontawesome.com/bd6ccea16f.js" crossorigin="anonymous"></script>
+        <script src="homepage.js"></script>
     </head>
     <body>
         <header>
+            <div class="container-fluid">
+                <div id="coupon">
+                    <button onClick="closeCoupon()">&times;</button>
+                    <div id="onimg">
+                        <img src="https://i.ibb.co/Qj3ckyw/Asian-Paints-Wall-Sticker-Rainforest-Nature-Design-1-jpg-image-153-115-medium.jpg"/>
+                    </div>
+                    <div id="couptxt">
+                    </div>
+                    <div id="txt">
+                        <span><h3>Get &#8377; 500*off on wall stickers  &#160;&#160;&#160;&#160;&#160;Use the code beside :- </h3></span>
+                    </div>
+                    <div id="coup">
+                        <button onclick="copy()"><h2>STICK500</h2></button>
+                    </div> 
+                </div>
+            </div>
             <div id="top">
                 <div class="dropdown">
                     <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Home owners
@@ -264,7 +281,6 @@
             </div>
             <div id="shop">
                 <div id="marketblock"><h2>SHOP ONLINE:</h2></div>
-                <!-- <div id="view"><a href="#"><h3>VIEW ALL</h3></a></div> -->
                 <div id="shopitem1">
                     <a href="#">
                         <img src="https://i.ibb.co/Gp304hR/Dark-side-Darth-01.jpg"/>
@@ -308,13 +324,6 @@
                     <span>Call:+91 9381583734</span>
                     <span>Mail us:- kish515001@gmail.com</span>
                 </div>
-                <!-- <div class="social">
-                    <h4>FOLLOW OUR PAGES</h4>
-                    <a href="#"><i class="fa-brands fa-facebook fa-lg col-md-4"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter fa-lg col-md-4"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram fa-lg col-md-4"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube fa-lg col-md-4"></i></a>
-                </div> -->
                 <hr>
                 <div id="copy">
                     &copy All rights preserved by Kishore
@@ -323,6 +332,9 @@
             
         </header>
         <hr>
+        <script>
+            window.onload = loadCoupon()
+        </script>
         
     </body>
     

@@ -1,4 +1,4 @@
-body{
+/* /* body{
     margin:auto;
     /* position: absolute; */
 }
@@ -12,7 +12,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 .search-bar{
     width:100%;
     max-width:600px;
@@ -60,7 +60,7 @@ header{
     height:50px;
     width:30px;
 }
-#drop{
+/* #drop{
     height:40px;
     width:100%;
     /* border:2px solid pink; */
@@ -615,6 +615,82 @@ hr{
     /* margin:5%; */
     text-align: center;
 }
+#coupon{
+    height:500px;
+    width:800px;
+    background-image: url(https://i.ibb.co/tpt3gwN/photo-1615184697985-c9bde1b07da7-ixlib-rb-1-2.jpg);
+    z-index:100;
+    margin-left:28%;
+    visibility: hidden;
+    position: absolute;
+    margin-top: -410%;
+    background:2px solid black;
+    border-radius: 10px;
+    
+}
+#coupon>img{
+    width:100%;
+    height:90%;
+    border-radius: 10px;
+    margin-bottom: 1%;
+    position:relative;
+}
+#coupon>button{
+    border-radius: 50%;
+    position:relative;
+}
+#onimg{
+    position:absolute;
+    height:300px;
+    width:50%;
+    margin-top:7%;
+    margin-left: 22%;
+    box-shadow: 0 0 40px black;
+}
+#onimg>img{
+    height:300px;
+    width:100%;
+}
+#couptxt{
+    /* border:2px solid green; */
+    background-color:black;
+    opacity: 0.5;
+    margin-top:51%;
+    position:absolute;
+    width:100%;
+    height:66px;
+    border-radius:  10px;
+}
+#couptxt>span{
+    color:white;
+    position:absolute;
+    opacity: 1;
+}
+#txt{
+    margin-top: 51%;
+    position:absolute;
+    color:white;
+    opacity: 1;
+    margin-left: 3%;
+}
+#coup{
+    margin-top: 51%;
+    position:absolute;
+    color:black;
+    opacity: 1;
+    margin-left: 70%;
+    background-color: white;
+    border-radius: 20px;
+}
+#coup>button{
+    height:66px;
+    width:400px;
+    border-radius: 10px;
+}
+#main{
+    background-color:orange;
+    height:800px;
+}
 @media screen and (max-width:1162px)
 {
     #blog1{
@@ -836,5 +912,426 @@ hr{
         float: left;
     }
 }
-
+@media screen and (max-width:1600px)
+{
+    #coupon{
+        height:425px;
+        width:700px;
+        background-image: url(https://i.ibb.co/tpt3gwN/photo-1615184697985-c9bde1b07da7-ixlib-rb-1-2.jpg);
+        z-index:100;
+        margin-left:28%;
+        visibility: hidden;
+        position: absolute;
+        margin-top: 7%;
+        background:2px solid black;
+        border-radius: 10px;
+        box-shadow: 0 0 80px black;
+        
+    }
+    #coupon>img{
+        width:100%;
+        height:90%;
+        border-radius: 10px;
+        margin-bottom: 1%;
+        position:relative;
+    }
+    #coupon>button{
+        border-radius: 50%;
+        position:relative;
+        float:right;
+    }
+    #onimg{
+        position:absolute;
+        height:250px;
+        width:50%;
+        margin-top:8%;
+        margin-left: 22%;
+        box-shadow: 0 0 20px black;
+    }
+    #onimg>img{
+        height:250px;
+        width:100%;
+    }
+    #couptxt{
+        /* border:2px solid green; */
+        background-color:black;
+        opacity: 0.5;
+        margin-top:51.5%;
+        position:absolute;
+        width:100%;
+        height:66px;
+        border-radius:  10px;
+    }
+    #couptxt>span{
+        color:white;
+        position:absolute;
+        opacity: 1;
+    }
+    #txt{
+        margin-top: 53%;
+        position:absolute;
+        color:white;
+        opacity: 1;
+        margin-left: 3%;
+    }
+    #txt>span>h3{
+        font-size: 20px;
+    }
+    #coup{
+        margin-top: 53%;
+        position:absolute;
+        color:black;
+        opacity: 1;
+        margin-left: 76%;
+        background-color: white;
+        border-radius: 20px;
+    }
+    #coup>button{
+        height:52px;
+        width:120px;
+        border-radius: 10px;
+        
+    }
+    #coup>button>h2{
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:1200px)
+{
+    #coupon{
+        height:400px;
+        width:600px;
+        background-image: url(https://i.ibb.co/tpt3gwN/photo-1615184697985-c9bde1b07da7-ixlib-rb-1-2.jpg);
+        z-index:100;
+        margin-left:19%;
+        visibility: hidden;
+        position: absolute;
+        margin-top: 12%;
+        background:2px solid black;
+        border-radius: 10px;
+        box-shadow: 0 0 80px solid black;
+        
+    }
+    #coupon>img{
+        width:100%;
+        height:90%;
+        border-radius: 10px;
+        margin-bottom: 1%;
+        position:relative;
+    }
+    #coupon>button{
+        border-radius: 50%;
+        position:relative;
+    }
+    #onimg{
+        position:absolute;
+        height:250px;
+        width:50%;
+        margin-top:8%;
+        margin-left: 22%;
+        box-shadow: 0 0 20px black;
+    }
+    #onimg>img{
+        height:250px;
+        width:100%;
+    }
+    #couptxt{
+        /* border:2px solid green; */
+        background-color:black;
+        opacity: 0.5;
+        margin-top:51.5%;
+        position:absolute;
+        width:100%;
+        height:66px;
+        border-radius:  10px;
+    }
+    #couptxt>span{
+        color:white;
+        position:absolute;
+        opacity: 1;
+    }
+    #txt{
+        margin-top: 53%;
+        position:absolute;
+        color:white;
+        opacity: 1;
+        margin-left: 3%;
+    }
+    #txt>span>h3{
+        font-size: 20px;
+    }
+    #coup{
+        margin-top: 53%;
+        position:absolute;
+        color:black;
+        opacity: 1;
+        margin-left: 76%;
+        background-color: white;
+        border-radius: 20px;
+    }
+    #coup>button{
+        height:52px;
+        width:120px;
+        border-radius: 10px;
+        
+    }
+    #coup>button>h2{
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:1000px)
+{
+    #coupon{
+        height:400px;
+        width:600px;
+        background-image: url(https://i.ibb.co/tpt3gwN/photo-1615184697985-c9bde1b07da7-ixlib-rb-1-2.jpg);
+        z-index:100;
+        margin-left:10%;
+        visibility: hidden;
+        position: absolute;
+        margin-top: 28%;
+        background:2px solid black;
+        border-radius: 10px;
+        box-shadow: 0 0 80px solid black;
+        
+    }
+    #coupon>img{
+        width:100%;
+        height:90%;
+        border-radius: 10px;
+        margin-bottom: 1%;
+        position:relative;
+    }
+    #coupon>button{
+        border-radius: 50%;
+        position:relative;
+    }
+    #onimg{
+        position:absolute;
+        height:250px;
+        width:50%;
+        margin-top:8%;
+        margin-left: 22%;
+        box-shadow: 0 0 20px black;
+    }
+    #onimg>img{
+        height:250px;
+        width:100%;
+    }
+    #couptxt{
+        /* border:2px solid green; */
+        background-color:black;
+        opacity: 0.5;
+        margin-top:51.5%;
+        position:absolute;
+        width:100%;
+        height:66px;
+        border-radius:  10px;
+    }
+    #couptxt>span{
+        color:white;
+        position:absolute;
+        opacity: 1;
+    }
+    #txt{
+        margin-top: 53%;
+        position:absolute;
+        color:white;
+        opacity: 1;
+        margin-left: 3%;
+    }
+    #txt>span>h3{
+        font-size: 20px;
+    }
+    #coup{
+        margin-top: 53%;
+        position:absolute;
+        color:black;
+        opacity: 1;
+        margin-left: 76%;
+        background-color: white;
+        border-radius: 20px;
+    }
+    #coup>button{
+        height:52px;
+        width:120px;
+        border-radius: 10px;
+        
+    }
+    #coup>button>h2{
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:800px)
+{
+    #coupon{
+        height:300px;
+        width:400px;
+        background-image: url(https://i.ibb.co/tpt3gwN/photo-1615184697985-c9bde1b07da7-ixlib-rb-1-2.jpg);
+        z-index:100;
+        margin-left:8%;
+        visibility: hidden;
+        position: absolute;
+        margin-top: 28%;
+        background:2px solid black;
+        border-radius: 10px;
+        box-shadow: 0 0 80px solid black;
+        
+    }
+    #coupon>img{
+        width:100%;
+        height:90%;
+        border-radius: 10px;
+        margin-bottom: 1%;
+        position:relative;
+    }
+    #coupon>button{
+        border-radius: 50%;
+        position:relative;
+    }
+    #onimg{
+        position:absolute;
+        height:100px;
+        width:50%;
+        margin-top:10%;
+        margin-left: 22%;
+        /* box-shadow: 0 0 20px black; */
+    }
+    #onimg>img{
+        height:150px;
+        width:100%;
+    }
+    #couptxt{
+        /* border:2px solid green; */
+        background-color:black;
+        opacity: 0.5;
+        margin-top:52%;
+        position:absolute;
+        width:100%;
+        height:66px;
+        border-radius:  10px;
+    }
+    #couptxt>span{
+        color:white;
+        position:absolute;
+        opacity: 1;
+    }
+    #txt{
+        margin-top: 52%;
+        position:absolute;
+        color:white;
+        opacity: 1;
+        margin-left: 3%;
+    }
+    #txt>span>h3{
+        font-size: 20px;
+    }
+    #coup{
+        margin-top: 54%;
+        position:absolute;
+        color:black;
+        opacity: 1;
+        margin-left: 74%;
+        background-color: white;
+        border-radius: 20px;
+    }
+    #coup>button{
+        height:50px;
+        width:100px;
+        border-radius: 10px;
+        
+    }
+    #coup>button>h2{
+        font-size: 19px;
+    }
+}
+@media screen and (max-width:500px)
+{
+    #coupon{
+        height:200px;
+        width:400px;
+        background-image: url(https://i.ibb.co/tpt3gwN/photo-1615184697985-c9bde1b07da7-ixlib-rb-1-2.jpg);
+        z-index:100;
+        margin-left:4%;
+        visibility: hidden;
+        position: absolute;
+        margin-top: 20%;
+        background:2px solid black;
+        border-radius: 10px;
+        box-shadow: 0 0 80px solid black;
+        
+    }
+    #coupon>img{
+        width:100%;
+        height:90%;
+        border-radius: 10px;
+        margin-bottom: 1%;
+        position:relative;
+    }
+    #coupon>button{
+        border-radius: 50%;
+        position:relative;
+    }
+    #onimg{
+        position:absolute;
+        height:100px;
+        width:50%;
+        margin-top:0%;
+        margin-left: 22%;
+        /* box-shadow: 0 0 20px black; */
+    }
+    #onimg>img{
+        height:128px;
+        width:100%;
+    }
+    #couptxt{
+        /* border:2px solid green; */
+        background-color:black;
+        opacity: 0.5;
+        margin-top:27%;
+        position:absolute;
+        width:100%;
+        height:66px;
+        border-radius:  10px;
+    }
+    #couptxt>span{
+        color:white;
+        position:absolute;
+        opacity: 1;
+    }
+    #txt{
+        margin-top: 27%;
+        position:absolute;
+        color:white;
+        opacity: 1;
+        margin-left: 3%;
+    }
+    #txt>span>h3{
+        font-size: 20px;
+    }
+    #coup{
+        margin-top: 29%;
+        position:absolute;
+        color:black;
+        opacity: 1;
+        margin-left: 74%;
+        background-color: white;
+        border-radius: 20px;
+    }
+    #coup>button{
+        height:50px;
+        width:100px;
+        border-radius: 10px;
+        
+    }
+    #coup>button>h2{
+        font-size: 19px;
+    }
+}
 
