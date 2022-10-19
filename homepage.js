@@ -16,3 +16,7 @@ function copy(){
 
     alert("Coupon code copied");
 }
+function mode(){
+    let mybody = document.body;
+    mybody.classList.toggle('mydark');
+}
