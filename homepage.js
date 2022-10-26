@@ -1,22 +1,22 @@
-function loadCoupon(){
-    document.getElementById('coupon').style.visibility = 'visible';
-    document.getElementById('main').style.opacity='0.7'
-}
+        function loadCoupon(){
+            document.getElementById('coupon').style.visibility = 'visible';
+            document.getElementById('main').style.opacity='0.7'
+        }
 
-function closeCoupon(){
-    document.getElementById('coupon').style.visibility = 'hidden';
-    document.getElementById('main').style.opacity='1'
-}
-function copy(){
-    var copytxt = document.getElementById('coup');
+        function closeCoupon(){
+            document.getElementById('coupon').style.visibility = 'hidden';
+            document.getElementById('main').style.opacity='1'
+        }
+        function copy(){
+            var copytxt = document.getElementById('coup');
 
-    copytxt.select();
+            copytxt.select();
 
-    navigator.clipboard.writeText(copytxt.value);
+            navigator.clipboard.writeText(copytxt.value);
 
-    alert("Coupon code copied");
-}
-function mode(){
-    let mybody = document.body;
-    mybody.classList.toggle('mydark');
-}
+            alert("Coupon code copied");
+        }
+        function mode(){
+            let mybody = document.body;
+            mybody.classList.toggle('mydark');
+        }

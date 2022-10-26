@@ -29,12 +29,19 @@
                 height:60px;
 
             }
+            #locate{
+                background-color: rgb(187, 237, 220);
+                border: none;
+            }
             .mydark{
                 background-color:black;
                 color:white;
                 
             }
         </style>
+        <script>
+            
+        </script>
     </head>
     <body>
         <header>
@@ -84,9 +91,12 @@
                     </form>
                     <div class="collapse navbar-collapse" id="myNavbar"> 
                         <ul class="nav navbar-nav navbar-right">
-                          <li><a href="#"> Sign Up</a></li>
-                          <li><a href="#"> Login</a></li>
-                          <li><button id="moon" onclick="mode()">
+                            <li>
+                                
+                            </li>
+                            <li><a href="#"> Sign Up</a></li>
+                            <li><a href="#"> Login</a></li>
+                            <li><button id="moon" onclick="mode()">
                             <img src="https://i.ibb.co/s3BYkFV/5262027.png" id="darkimage">
                         </button></li>
                         </ul>   
@@ -133,6 +143,12 @@
                         <span class="sr-only">Next</span>
                         </a>
                 </div>
+            </div>
+            <div id="knowloc">
+                <img src='https://openweathermap.org/img/w/01d.png' alt="weather"/>
+                <button onClick="geolocation()"id="locate">Locate Yourself</button>
+                <p id="out"></p>
+                <p id="weatherOut"></p>
             </div>
 
            </div>
@@ -355,7 +371,38 @@
             </div>
         </footer>
         <script>
-            window.onload = loadCoupon()
+            window.onload = loadCoupon();
+        </script>
+        <script>
+            let x = document.getElementById('out');
+            let y = document.getElementById('weatherOut');
+            
+            function geolocation(){
+                if(navigator.geolocation){
+                    navigator.geolocation.getCurrentPosition(showPosition)
+                }else{
+                    x.innerText = "Geo Not Supported"
+                }
+            }
+
+            function showPosition(data){
+                console.log(data)
+                let lat = data.coords.latitude;
+                let long = data.coords.longitude;
+                const url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${long}&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`
+                fetch(url,{method: 'GET'})
+                .then((res) => res.json())
+                .then((data) => {
+                    console.log(data)
+                    let cityName = data.city.name;
+                    let temp = data.list[0].temp.day;
+                    y.innerText = `Your are at ${cityName} & it's temperature is ${temp} °C.`
+                })
+                .catch((err) => {
+                    console.log(err)
+                })
+
+            }
         </script>
         
     </body>

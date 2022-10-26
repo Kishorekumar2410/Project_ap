@@ -65,6 +65,17 @@
   .slider.round:before {
     border-radius: 50%;
   }
+#knowloc{
+    height:120px;
+    width:170px;
+    float:right;
+    /* border:2px solid black; */
+    margin-right:-183px;
+    margin-top:-377px;
+    background:linear-gradient(to right, grey,orange);
+    color:black;
+
+}
 header{
     height: 60px;
     width:100%;
